@@ -8,20 +8,7 @@ let templateStr: string = `
     <marker position="Brampton, Canada"
       (dragstart)="log($event, 'dragstart')"
       (dragend)="log($event, 'dragend')"
-      draggable="true">
-        <text-label position="Brampton, Canada"
-        text = "asdfa"
-        fontFamily = "sans-serif"
-        fontSize = "42"
-        fontColor = "#ff0000"
-        strokeWeight = "14"
-        strokeColor = "#aaffff"
-        align = "center"
-        zIndex = "1e3"
-        (dragstart)="log($event, 'dragstart')"
-        (dragend)="log($event, 'dragend')"
-        draggable="true"></text-label>
-      </marker>
+      draggable="true"></marker>
   </ng2-map>
   <code>
     <br/><b>HTML</b>

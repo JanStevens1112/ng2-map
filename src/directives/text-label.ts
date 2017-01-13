@@ -100,16 +100,16 @@ export class MapLabel{
   }
 
   setValues(value: any){
-    this.text=value.text;
-    this.position = value.position;
-    this.panes = value.panes;
-    this.fontFamily = value.fontFamily;
-    this.fontSize = value.fontSize;
-    this.fontColor = value.fontColor;
-    this.strokeWeight = value.strokeWeight;
-    this.strokeColor = value.strokeColor;
-    this.align = value.align;
-    this.map = value.map;
+    this.text=value.text || this.text;
+    this.position = value.position || this.position;
+    this.panes = value.panes|| this.panes;
+    this.fontFamily = value.fontFamily|| this.fontFamily;
+    this.fontSize = value.fontSize|| this.fontSize;
+    this.fontColor = value.fontColor|| this.fontColor;
+    this.strokeWeight = value.strokeWeight|| this.strokeWeight;
+    this.strokeColor = value.strokeColor|| this.strokeColor;
+    this.align = value.align|| this.align;
+    this.map = value.map|| this.map;
     this.mapOverlayView.setMap(value.map);
     console.log(this.mapOverlayView.getProjection());
   }
